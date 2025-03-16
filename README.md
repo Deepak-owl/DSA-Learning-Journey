@@ -1,4 +1,4 @@
-DSA-Learning-Journey/
+DSA-Learning-Journey
 ├── CPP/
 │   ├── arrays.cpp
 │   ├── linked_list.cpp
