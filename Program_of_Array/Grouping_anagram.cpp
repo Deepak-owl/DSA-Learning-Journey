@@ -15,7 +15,7 @@
 // Time: O(n * k log k).
 // n strings, each sorted in O(k log k).
 // Space: O(n * k) for the hash map and output.
-
+//updated
 
 #include <iostream>
 #include <vector>
