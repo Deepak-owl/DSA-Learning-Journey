@@ -58,3 +58,11 @@ int main() {
     
     return 0;
 }
+
+
+
+// Approach: Sorting Method
+// Idea: Sort the array in-place, then check adjacent elements. If any two adjacent elements are equal, there’s a duplicate.
+// Why it works: After sorting, duplicates will be next to each other.
+// Trade-off: No extra space (beyond what the sorting algorithm might use
+// internally), but slower than the hash set (O(n log n) vs. O(n)).
