@@ -59,3 +59,16 @@ int main() {
     
     return 0;
 }
+
+// Problem Description (Assumed)
+// Task: Design an algorithm to:
+// Encode a list of strings (e.g., ["Hello", "World"]) into a single string.
+// Decode that string back into the original list.
+// Requirements:
+// Must work with any characters (e.g., lowercase, uppercase, special chars).
+// Should be stateless (no global variables).
+// No built-in serialization (e.g., eval).
+// Example:
+// Input: ["Hello", "World"]
+// Encoded: Something like "5#Hello5#World"
+// Decoded: ["Hello", "World"]

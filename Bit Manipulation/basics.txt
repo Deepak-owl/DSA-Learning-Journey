@@ -1,0 +1,60 @@
+What is Bit Manipulation?
+Bits: The smallest unit of data (0 or 1).
+Bit Manipulation: Using operations to work directly with these bits in numbers.
+Why?: Faster than arithmetic for some tasks,
+saves space, and solves problems like checking 
+====>powers of 2 or finding unique elements.
+In C++, integers (e.g., int) are stored as 32-bit binary numbers (or 64-bit for long long). Example:
+
+Decimal 5 = Binary 00000101 (32 bits, leading zeros omitted for clarity).
+
+Basic Bit Operations in C++
+1. AND (&)
+Compares bits: 1 & 1 = 1, otherwise 0.
+Use: Check if a bit is set, mask bits.
+
+2. OR (|)
+Combines bits: 1 | 0 = 1, 0 | 0 = 0.
+Use: Set a bit.
+
+3. XOR (^)
+Exclusive OR: 1 ^ 0 = 1, 1 ^ 1 = 0, 0 ^ 0 = 0.
+Use: Toggle bits, find unique elements.
+
+4. NOT (~)
+Flips bits: ~0 = 1, ~1 = 0.
+Use: Invert a number (note: inverts all 32 bits, including sign).
+
+5. Left Shift (<<)
+Shifts bits left, fills with 0s: 5 << 1 = 00000101 << 1 = 00001010 = 10.
+Use: Multiply by 2^n.
+
+6. Right Shift (>>)
+Shifts bits right: 5 >> 1 = 00000101 >> 1 = 00000010 = 2.
+Use: Divide by 2^n (for positive numbers).
+
+
+In an integer, bits are numbered from right to left, starting at 0.
+Example: 5 = 00000101 (32-bit int, showing 8 bits for clarity):
+Bit 0: 1 (rightmost).
+Bit 1: 0.
+Bit 2: 1.
+Bit 3-31: 0.
+
+Common Tricks
+1. Check if a Number is Even/Odd
+n & 1: If 0, even; if 1, odd.
+5 & 1 = 00000101 & 00000001 = 1 (odd).
+4 & 1 = 00000100 & 00000001 = 0 (even).
+
+2. Set a Bit
+n | (1 << k): Sets the k-th bit to 1.
+Set bit 2 in 5 (00000101): 5 | (1 << 2) = 00000101 | 00000100 = 00000101 = 5.
+
+3. Clear a Bit
+n & ~(1 << k): Sets the k-th bit to 0.
+Clear bit 0 in 5 (00000101): 5 & ~(1 << 0) = 00000101 & 11111110 = 00000100 = 4.
+
+4. Toggle a Bit
+n ^ (1 << k): Flips the k-th bit.
+Toggle bit 2 in 5 (00000101): 5 ^ (1 << 2) = 00000101 ^ 00000100 = 00000001 = 1.
