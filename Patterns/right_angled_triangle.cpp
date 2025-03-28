@@ -16,7 +16,7 @@ using namespace std;
 void printTriangle(int n) {
     for (int i = 0; i < n; i++) {         // i = row number (0 to n-1)
         for (int j = 0; j <= i; j++) {    // j = column number, prints * up to j <= i
-            cout << "* ";
+            cout << "* ";  //with  numbers cout<< j+1 ;
         }
         cout << endl;                      // New line after each row
     }
