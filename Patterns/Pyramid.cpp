@@ -21,6 +21,7 @@ void printPyramid(int n) {
         }
         // Print asterisks
         for (int j = 0; j < 2 * i + 1; j++) {       //2*i+1
+            
             cout << "*";
         }
         cout << endl;                          // New line after each row
