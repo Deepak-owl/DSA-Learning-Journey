@@ -1,0 +1,34 @@
+2. Common Operations
+
+I. Length: s.length() or s.size() (same thing, O(1)).
+
+II. Concatenation: s1 + s2 or s += "more".
+
+III. Comparison: ==, !=, <, >, etc. (lexicographical order).
+
+IV. Substring: s.substr(pos, len) — e.g., "Hello".substr(1, 3) = "ell".
+
+V. Find: s.find("substring") — returns index or string::npos if not found.
+
+
+3. Modification
+Append: s.append("text") or s += "text".
+Insert: s.insert(pos, "text").
+Erase: s.erase(pos, len) or s.clear() (empty the string).
+Replace: s.replace(pos, len, "newtext").
+
+4. Character Access
+Individual: s[i] or s.at(i).
+Iterate:
+for (char c : s) {
+    cout << c << " ";
+}
+
+
+5. String to Number
+To Integer: stoi(s) — e.g., stoi("123") = 123.
+To String: to_string(n) — e.g., to_string(123) = "123".
+
+8. Tips
+Pass by Reference: Use const string& to avoid copying (e.g., in functions).
+Empty Check: s.empty() or s == "".
